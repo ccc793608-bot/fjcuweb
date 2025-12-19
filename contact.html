@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+ 
+ <title>聯絡我們 - Aurelia</title>
+  <link rel="stylesheet" href="style2.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html">Aurelia Seaside Resort</a>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">關於我們</a>
+      <a href="rooms.html">房型</a>
+      <a href="facilities.html">設施</a>
+      <a href="dining.html">餐飲</a>
+      <a href="activities.html">行程</a>
+      <a href="booking.html" class="cta">訂房</a>
+      <a href="contact.html">聯絡</a>
+    </nav>
+    <button class="mobile-toggle" aria-label="開啟選單">☰</button>
+  </header>
+
+  <main>
+    <section class="container">
+     
+ <br><br><h1 class="section-title">聯絡我們</h1>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>地址</h3>
+          <p>123 Aurelia 海岸路，Sunny Bay</p>
+
+          <h3>電話</h3>
+          <p>+886-2-1234-5678</p>
+
+          <h3>Email</h3>
+          <p>info@aurelia-resort.example</p>
+
+          <h3>交通方式</h3>
+          <ul>
+            <li>開車：沿海岸路直行，飯店入口有停車場。</li>
+            <li>大眾運輸：從最近車站搭計程車約 20 分鐘。</li>
+          </ul>
+        </div>
+
+        <form class="contact-form" action="#" method="post" onsubmit="alert('表單為示意，未傳送'); return false;">
+          <br><label>姓名<input type="text" name="name" required></label>
+          <label>Email<input type="email" name="email" required></label>
+          <label>訊息<textarea name="message" rows="6" required></textarea></label>
+          <button class="btn" type="submit">送出訊息</button>
+        </form>
+      </div>
+
+      <div class="map-placeholder">
+        <img src="img/map.jpg" alt="Google Map 圖片 (示意)" />
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>Aurelia Seaside Resort</h4>
+        <p>在海與天空之間，遇見最純粹的放鬆。</p>
+      </div>
+      <div>
+        <h4>快速連結</h4>
+        <a href="rooms.html">房型介紹</a>
+        <a href="booking.html">訂房</a>
+      </div>
+      <div>
+        <h4>聯絡</h4>
+        <p>電話：+886-2-1234-5678</p>
+      </div>
+    </div>
+    <div class="copyright">© 2025 Aurelia Seaside Resort</div>
+  </footer>
+
+  <script>
+    const btn = document.querySelector('.mobile-toggle');
+    const nav = document.querySelector('.main-nav');
+    btn.addEventListener('click', ()=> nav.classList.toggle('open'));
+  </script>
+</body>
+</html>

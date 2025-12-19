@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>房型介紹 - Aurelia</title>
+  <link rel="stylesheet" href="style2.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html">Aurelia Seaside Resort</a>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">關於我們</a>
+      <a href="rooms.html">房型</a>
+      <a href="facilities.html">設施</a>
+      <a href="dining.html">餐飲</a>
+      <a href="activities.html">行程</a>
+      <a href="booking.html" class="cta">訂房</a>
+      <a href="contact.html">聯絡</a>
+    </nav>
+    <button class="mobile-toggle" aria-label="開啟選單">☰</button>
+  </header>
+
+  <main>
+    <section class="container">
+      <br><br>
+      <h1 class="section-title">房型介紹</h1>
+
+      <div class="room-grid">
+        <article class="room-card">
+          <img src="img/room-standard.jpg" alt="海景標準房" />
+          <h3>海景標準房</h3>
+          <p>約 28 ㎡，雙人床或兩小床可選，陽台、淋浴及空調。</p>
+          <p class="price">價格： NT$4,200 起 </p>
+        </article>
+
+        <article class="room-card">
+          <img src="img/room-deluxe.jpg" alt="豪華海景雙人房" />
+          <h3>豪華海景雙人房</h3>
+          <p>約 36 ㎡，落地窗、浴缸、私人陽台，含早餐。</p>
+          <p class="price">價格：NT$6,500 起</p>
+        </article>
+
+        <article class="room-card">
+          <img src="img/room-family.jpg" alt="家庭海景房" />
+          <h3>家庭海景房</h3>
+          <p>約 48 ㎡，適合 3–4 人，歡迎加床（需付費）。</p>
+          <p class="price">價格：NT$8,500 起</p>
+        </article>
+
+        <article class="room-card">
+          <img src="img/room-suite.jpg" alt="海天套房" />
+          <h3>海天套房（頂樓）</h3>
+          <p>約 72 ㎡，私人頂樓陽台、豪華客廳與浴缸，極致海景。</p>
+          <p class="price">價格：NT$15,000 起</p>
+        </article>
+      </div>
+
+      <p class="note">※ 價格僅供參考，實際價格以訂房頁面與官網公告為準。淡旺季定義：旺季包含暑假、國定連假與特殊活動期間。</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>Aurelia Seaside Resort</h4>
+        <p>在海與天空之間，遇見最純粹的放鬆。</p>
+      </div>
+      <div>
+        <h4>快速連結</h4>
+        <a href="booking.html">訂房</a>
+        <a href="dining.html">餐飲</a>
+      </div>
+      <div>
+        <h4>聯絡</h4>
+        <p>電話：+886-2-1234-5678</p>
+      </div>
+    </div>
+    <div class="copyright">© 2025 Aurelia Seaside Resort</div>
+  </footer>
+
+  <script>
+    const btn = document.querySelector('.mobile-toggle');
+    const nav = document.querySelector('.main-nav');
+    btn.addEventListener('click', ()=> nav.classList.toggle('open'));
+  </script>
+</body>
+</html>

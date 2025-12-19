@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Aurelia Seaside Resort - 首頁</title>
+  <link rel="stylesheet" href="style2.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html">Aurelia Seaside Resort</a>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">關於我們</a>
+      <a href="rooms.html">房型</a>
+      <a href="facilities.html">設施</a>
+      <a href="dining.html">餐飲</a>
+      <a href="activities.html">行程</a>
+      <a href="booking.html" class="cta">訂房</a>
+      <a href="contact.html">聯絡</a>
+    </nav>
+    <button class="mobile-toggle" aria-label="開啟選單">☰</button>
+  </header>
+
+  <main>
+    <section class="hero" style="background-image:url('img/hero.jpg')">
+      <div class="hero-inner">
+        <br><br>
+        <h1>在海與天空之間，遇見最純粹的放鬆</h1>
+        <p class="hero-sub">Aurelia — 海景、SPA、在地文化體驗</p>
+        <div class="hero-cta">
+          <a href="booking.html" class="btn">立即訂房</a>
+          <a href="rooms.html" class="btn ghost">查看房型</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="container">
+        <div class="feature-grid">
+          <article class="feature">
+            <img src="img/feature-room.jpg" alt="全海景房" />
+            <h3>全海景房型</h3>
+            <p>每間客房皆面向大海，擁有私人陽台與寬敞採光。</p>
+          </article>
+
+          <article class="feature">
+            <img src="img/feature-pool.jpg" alt="無邊際泳池" />
+            <h3>海景無邊際泳池</h3>
+            <p>天際線與海面融為一體的無邊際泳池，黃昏景色無與倫比。</p>
+          </article>
+
+          <article class="feature">
+            <img src="img/feature-activity.jpg" alt="在地文化體驗" />
+            <h3>在地文化體驗</h3>
+            <p>手作課程、海岸生態導覽與在地美食行程，深度體驗當地風情。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="promo container">
+      <div class="promo-left">
+        <h2>最新消息</h2>
+        <ul class="news-list">
+          <li><strong>2025-12-24</strong> — 聖誕海邊嘉年華票券開賣。</li>
+          <li><strong>2025-12-31</strong> — 跨年住房專案。</li>
+          <li><strong>2026-02-16</strong> — 春節住宿早鳥優惠。</li>
+        </ul>
+      </div>
+      <div class="promo-right">
+        <h2>快速導覽</h2>
+        <div class="quick-links">
+          <a href="booking.html" class="card-link">線上訂房</a>
+          <a href="dining.html" class="card-link">餐飲介紹</a>
+          <a href="activities.html" class="card-link">行程套裝</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>Aurelia Seaside Resort</h4>
+        <p>在海與天空之間，遇見最純粹的放鬆。</p>
+      </div>
+      <div>
+        <h4>快速連結</h4>
+        <a href="rooms.html">房型介紹</a>
+        <a href="facilities.html">設施</a>
+        <a href="contact.html">聯絡我們</a>
+      </div>
+      <div>
+        <h4>聯絡</h4>
+        <p>電話：+886-2-1234-5678</p>
+        <p>Email：info@aurelia-resort.example</p>
+      </div>
+    </div>
+    <div class="copyright">© 2025 Aurelia Seaside Resort</div>
+  </footer>
+
+  <script>
+    // 手機選單切換（簡單）
+    const btn = document.querySelector('.mobile-toggle');
+    const nav = document.querySelector('.main-nav');
+    btn.addEventListener('click', ()=> nav.classList.toggle('open'));
+  </script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>設施 - Aurelia</title>
+  <link rel="stylesheet" href="style2.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html">Aurelia Seaside Resort</a>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">關於我們</a>
+      <a href="rooms.html">房型</a>
+      <a href="facilities.html">設施</a>
+      <a href="dining.html">餐飲</a>
+      <a href="activities.html">行程</a>
+      <a href="booking.html" class="cta">訂房</a>
+      <a href="contact.html">聯絡</a>
+    </nav>
+    <button class="mobile-toggle" aria-label="開啟選單">☰</button>
+  </header>
+
+  <main>
+    <section class="container">
+      <br><br>
+      <h1 class="section-title">住宿設施</h1>
+
+      <div class="facility-grid">
+        <div class="facility">
+          <img src="img/pool.jpg" alt="無邊際泳池" />
+          <h3>無邊際泳池</h3>
+          <p>晨泳、黃昏時段欣賞海天一色（開放時間：06:00–20:00）。</p>
+        </div>
+
+        <div class="facility">
+          <img src="img/spa.jpg" alt="SPA" />
+          <h3>SPA & 按摩</h3>
+          <p>提供療癒按摩與海洋岩鹽療程，需提前預約。</p>
+        </div>
+
+        <div class="facility">
+          <img src="img/gym.jpg" alt="健身房" />
+          <h3>全日健身房</h3>
+          <p>24 小時開放，配備有氧與重量器材。</p>
+        </div>
+
+        <div class="facility">
+          <img src="img/kids.jpg" alt="兒童遊戲室" />
+          <h3>兒童遊戲室</h3>
+          <p>安全的遊戲空間，適合家庭旅客。</p>
+        </div>
+
+        <div class="facility">
+          <img src="img/rentals.jpg" alt="沙灘活動租借" />
+          <h3>沙灘活動租借站</h3>
+          <p>SUP、獨木舟及浮潛裝備租借服務。</p>
+        </div>
+
+        <div class="facility">
+          <img src="img/business.jpg" alt="商務中心" />
+          <h3>商務中心</h3>
+          <p>會議室與工作站，提供會議與列印支援。</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>Aurelia Seaside Resort</h4>
+        <p>在海與天空之間，遇見最純粹的放鬆。</p>
+      </div>
+      <div>
+        <h4>快速連結</h4>
+        <a href="rooms.html">房型介紹</a>
+        <a href="booking.html">訂房</a>
+      </div>
+      <div>
+        <h4>聯絡</h4>
+        <p>電話：+886-2-1234-5678</p>
+      </div>
+    </div>
+    <div class="copyright">© 2025 Aurelia Seaside Resort</div>
+  </footer>
+
+  <script>
+    const btn = document.querySelector('.mobile-toggle');
+    const nav = document.querySelector('.main-nav');
+    btn.addEventListener('click', ()=> nav.classList.toggle('open'));
+  </script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>旅遊行程 - Aurelia</title>
+  <link rel="stylesheet" href="style2.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html">Aurelia Seaside Resort</a>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">關於我們</a>
+      <a href="rooms.html">房型</a>
+      <a href="facilities.html">設施</a>
+      <a href="dining.html">餐飲</a>
+      <a href="activities.html">行程</a>
+      <a href="booking.html" class="cta">訂房</a>
+      <a href="contact.html">聯絡</a>
+    </nav>
+    <button class="mobile-toggle" aria-label="開啟選單">☰</button>
+  </header>
+
+  <main>
+    <section class="container">
+      <br><br>
+      <h1 class="section-title">旅遊行程與套裝</h1>
+
+      <div class="package-grid">
+        <div class="package">
+          <h3>情侶浪漫行程</h3>
+<p>包含海邊晚餐、雙人 SPA 與私人沙灘散步導覽（適合慶祝與求婚）。</p>
+       <img src="img/romantic.jpg" alt="情侶浪漫行程" />
+     
+        </div>
+
+        <div class="package">
+          <h3>家庭親子行程</h3>
+          <p>包含親子手作（貝殼飾品）、兒童海洋教育活動與家庭套票優惠。</p>
+         <img src="img/family.jpg" alt="家庭親子行程" />
+
+
+        </div>
+
+        <div class="package">
+          <h3>海洋冒險行程</h3>
+          <p>包含 SUP 體驗、船上賞海豚與浮潛導覽（需提前報名）。</p>
+ <img src="img/sea.jpg" alt="海洋冒險行程" />
+
+        </div>
+      </div>
+
+      <p class="note">※ 部分行程為季節限定，實際出團時間請以訂房時詢問為準。</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>Aurelia Seaside Resort</h4>
+        <p>在海與天空之間，遇見最純粹的放鬆。</p>
+      </div>
+      <div>
+        <h4>快速連結</h4>
+        <a href="booking.html">訂房</a>
+      </div>
+      <div>
+        <h4>聯絡</h4>
+        <p>電話：+886-2-1234-5678</p>
+      </div>
+    </div>
+    <div class="copyright">© 2025 Aurelia Seaside Resort</div>
+  </footer>
+
+  <script>
+    const btn = document.querySelector('.mobile-toggle');
+    const nav = document.querySelector('.main-nav');
+    btn.addEventListener('click', ()=> nav.classList.toggle('open'));
+  </script>
+</body>
+</html>

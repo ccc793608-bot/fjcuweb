@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>訂房資訊 - Aurelia</title>
+  <link rel="stylesheet" href="style2.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html">Aurelia Seaside Resort</a>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">關於我們</a>
+      <a href="rooms.html">房型</a>
+      <a href="facilities.html">設施</a>
+      <a href="dining.html">餐飲</a>
+      <a href="activities.html">行程</a>
+      <a href="booking.html" class="cta">訂房</a>
+      <a href="contact.html">聯絡</a>
+    </nav>
+    <button class="mobile-toggle" aria-label="開啟選單">☰</button>
+  </header>
+
+  <main>
+    <section class="container">
+      <br><br>
+      <h1 class="section-title">訂房資訊</h1>
+
+      <h3>入住 / 退房</h3>
+      <p>入住時間：15:00 以後 / 退房時間：11:00 前</p>
+
+      <h3>取消政策</h3>
+      <ul>
+        <li>入住前 14 天取消：全額退費（扣手續費）。</li>
+        <li>入住前 7–13 天取消：退 50%。</li>
+        <li>入住前 6 天內或未到：不退費。</li>
+      </ul>
+
+      <h3>加床與寵物</h3>
+      <p>加床費：NT$800/晚（含早餐）。寵物政策：僅限小型犬，需事先申請並加收清潔費。</p>
+
+      <h3>房型與價格表</h3>
+      <table class="price-table">
+        <thead>
+          <tr><th>房型<th>價格</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>海景標準房<td>NT$4,200</td></tr>
+          <tr><td>豪華海景雙人房<td>NT$6,500</td></tr>
+          <tr><td>家庭海景房<td>NT$8,500</td></tr>
+          <tr><td>海天套房<td>NT$15,000</td></tr>
+        </tbody>
+      </table>
+
+      <p class="note">※ 線上訂房為示意按鈕，實際付款請以飯店與第三方平台流程為準。</p>
+
+      <div class="booking-cta">
+        <a class="btn" href="#">開始訂房</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>Aurelia Seaside Resort</h4>
+        <p>在海與天空之間，遇見最純粹的放鬆。</p>
+      </div>
+      <div>
+        <h4>快速連結</h4>
+        <a href="rooms.html">房型介紹</a>
+        <a href="contact.html">聯絡</a>
+      </div>
+      <div>
+        <h4>聯絡</h4>
+        <p>電話：+886-2-1234-5678</p>
+      </div>
+    </div>
+    <div class="copyright">© 2025 Aurelia Seaside Resort</div>
+  </footer>
+
+  <script>
+    const btn = document.querySelector('.mobile-toggle');
+    const nav = document.querySelector('.main-nav');
+    btn.addEventListener('click', ()=> nav.classList.toggle('open'));
+  </script>
+</body>
+</html>
